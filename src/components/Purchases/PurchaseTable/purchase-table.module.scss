@@ -1,0 +1,96 @@
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border: 1px solid #E7E7ED;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+.tableHeader {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+  display: table-header-group;
+}
+
+.info {
+  max-width: 139px;
+  overflow-wrap: break-word;
+}
+
+.description {
+  max-width: 139px;
+  overflow-wrap: break-word;
+}
+
+.tableData {
+  max-width: 139px;
+}
+
+.tableImage {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 9999px;
+}
+
+.row {
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  opacity: 1;
+  animation: fade 150ms linear;
+}
+
+.tableImageWrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.tableHeadName {
+  text-align: -webkit-match-parent;
+  font-weight: 400;
+  padding: 15px 30px 15px 30px;
+  line-height: 2.4;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #272833;
+  max-width: 139px;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}
+
+
+.priceData {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+
+.tableRow {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+.tableCellHeader {
+  vertical-align: bottom;
+  border-bottom: 1px solid #E7E7ED;
+}
+
+.table>:not(thead)>*>* {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}

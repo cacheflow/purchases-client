@@ -1,0 +1,36 @@
+.purchaseCard {
+  display: flex;
+}
+
+.purchaseCardheader {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.purchaseCardWrapper {
+  display: flex;
+}
+
+.purchaseCardSpacing {
+  padding-bottom: 10px;
+}
+
+.purchaseCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #CDCED9;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.purchaseCardBody {
+  flex: 1 1 auto;
+  padding: 1rem 1rem
+}

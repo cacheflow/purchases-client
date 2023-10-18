@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.199",
+    "classnames": "^2.3.2",
+    "lodash.throttle": "^4.1.1",
+    "next": "13.5.4",
     "react": "^18",
+    "react-cool-virtual": "^0.7.0",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "react-virtuoso": "^4.6.2",
+    "react-window": "^1.8.9",
+    "react-window-infinite-loader": "^1.0.9",
+    "sass": "^1.32.5"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5"
   }
 }
