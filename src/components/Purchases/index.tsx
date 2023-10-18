@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React from "react"
 import Col from "@/components/shared/Col"
 import styles from './purchases.module.scss'
 import PurchaseCard from "@/components/Purchases/PurchaseCard/index"
@@ -22,6 +22,8 @@ const PurchasesContainer = ({ purchases }: {
   purchases: any
 }): JSX.Element => {
   const onMobileOrTablet = useMediaQuery('(max-width: 992px)');
+  // Due to the API returning all purchases, I wanted to implement a simple in memory pagination 
+  // or virtualization to only render n purchases at the time to economize on DOM nodes.
 
   return (
     <Col sm={12} lg={12} className='mx-auto'>

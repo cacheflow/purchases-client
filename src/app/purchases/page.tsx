@@ -13,6 +13,12 @@ const statuses: Record<STATES, STATES>  = {
   error: 'error'
 }
 
+// Note: Some of the code is typed while in other places, 
+// I committed a cardinal Typescript sin and used 'any'. It's because I ran out of time. 
+// Also, would have loved some to add some unit and integration test coverage 
+// for these components using playwright and jest.
+
+
 const PurchasesPage = (): any => {
   const [purchases, setPurchases] = useState([])
   const [status, setStatus] = useState<STATES>('idle');
